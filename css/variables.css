@@ -1,0 +1,37 @@
+/* Designtokens från Kafé Kardemummas design. Ändra här – det slår igenom överallt. */
+:root {
+  /* Färger */
+  --color-primary: #8c1010;
+  --color-primary-dark: #5e0a0a;
+  --color-brown: #5b3a29;
+  --color-brown-dark: #2b1c14;
+  --color-heading: #3b2418;
+  --color-text: #222222;
+  --color-bg: #fffaf3;
+  --color-surface: #ffffff;
+  --color-tint: #f3e3cf;
+  --color-border: #e3d5c3;
+  --color-input-border: #8a7a6a;
+  --color-focus: #1a73e8;
+
+  /* Typografi */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --fs-base: 1rem;
+  --fs-lead: 1.125rem;
+  --fs-h3: 1.25rem;
+  --fs-h2: 1.75rem;
+  --fs-hero: 2.25rem;
+
+  /* Avstånd (8-punktsskala) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+
+  /* Övrigt */
+  --radius: 8px;
+  --radius-sm: 6px;
+  --max-width: 1100px;
+}

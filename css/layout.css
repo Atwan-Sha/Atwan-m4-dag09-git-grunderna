@@ -1,0 +1,83 @@
+/* Layout: sidans stora delar. Flexbox och Grid. Mobile first. */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+  background-color: var(--color-brown);
+  color: #ffffff;
+  padding: var(--space-2) var(--space-3);
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.75rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: var(--space-3);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.meny-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+#om-oss {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-1) var(--space-4);
+}
+
+#om-oss h2 {
+  grid-column: 1 / -1;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  background-color: var(--color-brown-dark);
+  color: #ffffff;
+  padding: var(--space-3);
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: var(--space-4);
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    padding: 20px var(--space-5);
+  }
+
+  #om-oss {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  #om-oss img {
+    grid-row: 2 / span 2;
+    grid-column: 2;
+  }
+}

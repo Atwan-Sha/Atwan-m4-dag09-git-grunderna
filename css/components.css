@@ -1,0 +1,113 @@
+/* Komponenter: återanvändbara delar (nav-länkar, kort, knapp, hero, formulär) */
+nav a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.knapp {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.knapp:hover {
+  background-color: var(--color-primary-dark);
+  color: #ffffff;
+}
+
+/* Kort */
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+}
+
+article img,
+#om-oss img {
+  border-radius: 4px;
+}
+
+.pris {
+  margin-top: auto;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Hero */
+#hero {
+  background-color: var(--color-tint);
+  padding: var(--space-4) var(--space-3);
+  border-radius: var(--radius);
+}
+
+#hero p {
+  font-size: var(--fs-lead);
+  max-width: 60ch;
+}
+
+@media (min-width: 600px) {
+  #hero {
+    padding: 56px 40px;
+  }
+
+  #hero h2 {
+    font-size: var(--fs-hero);
+  }
+}
+
+/* Formulär */
+.falt,
+.val {
+  margin-bottom: var(--space-2);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.val label {
+  display: inline;
+  font-weight: 400;
+  margin-left: var(--space-1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  max-width: 28rem;
+  padding: 10px 12px;
+  border: 2px solid var(--color-input-border);
+  border-radius: var(--radius-sm);
+  font: inherit;
+}
+
+fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin: 0 0 var(--space-2);
+  padding: 12px var(--space-2);
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 var(--space-1);
+}
