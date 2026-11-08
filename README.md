@@ -40,8 +40,8 @@ Gör fem ytterligare små ändringar, en i taget, och gör en commit för varje:
    1. ändra en rubriktext
    2. lägg till en fjärde maträtt i menyn
    3. ändra färgen `--color-primary`
-   4. lägg till en rad i `README.md` om dig själv
-    1. blivande frontendutvecklare som övar på att använda git
+   4. lägg till en rad i `README.md` om dig själv <br>
+    4.5. blivande frontendutvecklare som övar på att använda git
    5. ändra öppettiderna i Om oss
 
 Kör alltid `git status` före `git add` och `git log --oneline` efter.
